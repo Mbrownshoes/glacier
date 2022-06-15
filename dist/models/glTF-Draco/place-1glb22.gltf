@@ -1,0 +1,217 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "PLACE_MORPH",
+            "scale" : [
+                8.241619110107422,
+                8.241619110107422,
+                8.241619110107422
+            ],
+            "translation" : [
+                51.47900390625,
+                -225.3968048095703,
+                -27.963394165039062
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5909091234207153
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "extras" : {
+                "targetNames" : [
+                    "place08_TEXTURE_TEMPLATE"
+                ]
+            },
+            "name" : "place08_clipped_model.005",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0,
+                    "targets" : [
+                        {
+                            "POSITION" : 4,
+                            "NORMAL" : 5
+                        }
+                    ]
+                }
+            ],
+            "weights" : [
+                0
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "meltyplace",
+            "uri" : "meltyplace.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 537857,
+            "max" : [
+                21.915061950683594,
+                27.735864639282227,
+                27.73933982849121
+            ],
+            "min" : [
+                -30.20196533203125,
+                17.212188720703125,
+                -35.27424240112305
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 537857,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 537857,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 1848198,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 537857,
+            "max" : [
+                0.289886474609375,
+                0.17615890502929688,
+                0.26166725158691406
+            ],
+            "min" : [
+                -0.2245779037475586,
+                -0.3750877380371094,
+                -0.1555461883544922
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 537857,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 218,
+            "max" : [
+                9.083333333333334
+            ],
+            "min" : [
+                0.041666666666666664
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 218,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 6454284,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6454284,
+            "byteOffset" : 6454284
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4302856,
+            "byteOffset" : 12908568
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7392792,
+            "byteOffset" : 17211424
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6454284,
+            "byteOffset" : 24604216
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6454284,
+            "byteOffset" : 31058500
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 872,
+            "byteOffset" : 37512784
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 872,
+            "byteOffset" : 37513656
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 37514528,
+            "uri" : "place-1glb22.bin"
+        }
+    ]
+}
