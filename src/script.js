@@ -5,7 +5,6 @@ import * as dat from 'dat.gui'
 import { GLTFLoader }  from 'three/examples/jsm/loaders/GLTFLoader'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 
-
 /**
  * Base
  */
@@ -22,13 +21,15 @@ const scene = new THREE.Scene()
  * Models
  */
 const dracoLoader = new DRACOLoader()
-dracoLoader.setDecoderPath('/draco/')
+// dracoLoader.setDecoderPath('/draco/')
+dracoLoader.setDecoderPath('/')
+dracoLoader.setDecoderConfig({type: 'js'}); 
 
 const gltfLoader = new GLTFLoader()
 gltfLoader.setDRACOLoader(dracoLoader)
 
 let mixer = null
-gltfLoader.load('/models/glTF-Draco/place-1glb22.gltf', (gltf) =>
+gltfLoader.load('/models/glTF-Draco/place.gltf', (gltf) =>
 {
     console.log(gltf)
 
