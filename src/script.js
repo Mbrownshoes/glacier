@@ -29,7 +29,7 @@ const gltfLoader = new GLTFLoader()
 gltfLoader.setDRACOLoader(dracoLoader)
 
 let mixer = null
-gltfLoader.load('/models/glTF-Draco/place.gltf', (gltf) =>
+gltfLoader.load('./models/glTF-Draco/place.gltf', (gltf) =>
 {
     console.log(gltf)
 
