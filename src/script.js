@@ -22,7 +22,7 @@ const scene = new THREE.Scene()
  */
 const dracoLoader = new DRACOLoader()
 // dracoLoader.setDecoderPath('/draco/')
-dracoLoader.setDecoderPath('/')
+dracoLoader.setDecoderPath('./')
 dracoLoader.setDecoderConfig({type: 'js'}); 
 
 const gltfLoader = new GLTFLoader()
