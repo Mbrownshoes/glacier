@@ -28,7 +28,7 @@ const gltfLoader = new GLTFLoader()
 gltfLoader.setDRACOLoader(dracoLoader)
 
 let mixer = null
-gltfLoader.load('/models/place-1glb22.gltf', (gltf) =>
+gltfLoader.load('/models/glTF-Draco/place-1glb22.gltf', (gltf) =>
 {
     console.log(gltf)
 
@@ -63,22 +63,31 @@ gltfLoader.load('/models/place-1glb22.gltf', (gltf) =>
 // floor.rotation.x = - Math.PI * 0.5
 // scene.add(floor)
 
+
+scene.background = new THREE.Color( "#ffffff" );
+// scene.background = new THREE.Color( "#353535" );
+
+
 /**
  * Lights
  */
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.8)
-scene.add(ambientLight)
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.2)
+// scene.add(ambientLight)
 
-const directionalLight = new THREE.DirectionalLight(0xffffff, 0.6)
+const directionalLight = new THREE.DirectionalLight(0xfce9e9,.6)
 directionalLight.castShadow = true
 directionalLight.shadow.mapSize.set(1024, 1024)
-directionalLight.shadow.camera.far = 15
+directionalLight.shadow.camera.far = 1
 directionalLight.shadow.camera.left = - 7
 directionalLight.shadow.camera.top = 7
 directionalLight.shadow.camera.right = 7
 directionalLight.shadow.camera.bottom = - 7
-directionalLight.position.set(10, 10, 5)
-scene.add(directionalLight)
+directionalLight.position.set(10, 10, 2)
+// scene.add(directionalLight)
+const light = new THREE.HemisphereLight( 0xffffff, 0x080820, 1 );
+scene.add( light );
+
+
 
 /**
  * Sizes
